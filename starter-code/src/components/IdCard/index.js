@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import moment from "moment";
 import "./IdCard.scss";
+
+moment.defaultFormat = "ddd[,] DD MMM YYYY";
 
 class IdCard extends Component {
     render () {
@@ -15,7 +18,7 @@ class IdCard extends Component {
                     <span><strong>Lastname:</strong> {lastName}</span>
                     <span><strong>Gender:</strong> {gender}</span>
                     <span><strong>Height:</strong> {height}</span>
-                    <span><strong>birth:</strong> {birth.toUTCString().slice(0,-13)}</span>
+                    <span><strong>Birth:</strong> {moment(birth).format()}</span>
                 </div>
             </div>
         )
