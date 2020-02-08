@@ -38,10 +38,11 @@ class App extends Component {
         <Random min={1} max={100}/>
 
         <h1>Rating</h1>
-        <Rating>1</Rating>
-        <Rating>2</Rating>
-        <Rating>3.6</Rating>
-        <Rating>4.2</Rating>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
     );

@@ -9,7 +9,7 @@ class Rating extends Component {
                 {[1,2,3,4,5].map((el, index) => {
                     let starUrl = "https://fonts.gstatic.com/s/i/materialicons/star_border/v4/24px.svg";
 
-                    if(Math.floor(Number(children)) > index) {
+                    if(Math.round(Number(children)) > index) {
                         starUrl = "https://fonts.gstatic.com/s/i/materialicons/star/v5/24px.svg"
                     }
 
