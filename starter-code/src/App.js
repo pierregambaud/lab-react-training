@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import IdCard from "./components/IdCard/";
 import Greetings from "./components/Greetings/";
 import Random from "./components/Random/";
+import Rating from "./components/Rating/";
 
 class App extends Component {
   render() {
@@ -35,6 +36,13 @@ class App extends Component {
         <h1>Random</h1>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
+
+        <h1>Rating</h1>
+        <Rating>1</Rating>
+        <Rating>2</Rating>
+        <Rating>3.6</Rating>
+        <Rating>4.2</Rating>
+        <Rating>5</Rating>
       </div>
     );
   }
