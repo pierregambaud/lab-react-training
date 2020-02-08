@@ -1,0 +1,32 @@
+.DriverCard {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #455EB5;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+
+    .cover {
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: top center;
+            object-fit: cover;
+        }    
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+
+        img {
+            height: 2em;
+            filter: invert(1);
+        }
+    }
+}
